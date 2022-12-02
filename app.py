@@ -1,5 +1,4 @@
-#import imp
-import opencv-python-headless as cv2
+import cv2
 import numpy as np
 from PIL import Image, ImageOps
 import io

@@ -1,12 +1,16 @@
 import streamlit as st
+import joblib
+from urllib.request import urlopen
 
 
 import pickle
+pickled = open('model/IrisClassifier.pkl', 'rb')
+iris_model = pickle.load(pickled)
 
-#iris_model = pickle.load(open('model/IrisClassifier.pkl', 'rb'))
+#iris_model = joblib.load(urlopen("https://github.com/agbozo1/app-a/blob/main/model/IrisClassifier.pkl"))
 
-with open('model/IrisClassifier.pkl', 'rb') as handle:
-    iris_model = pickle.loads(handle.read())
+#with open('model/IrisClassifier.pkl', 'rb') as handle:
+#    iris_model = pickle.loads(handle.read())
 
 
 layout = 'centered' #wide / centered

@@ -3,10 +3,10 @@ import streamlit as st
 
 import pickle
 
-iris_model = pickle.load(open('model/IrisClassifier.pkl', 'rb'))
+#iris_model = pickle.load(open('model/IrisClassifier.pkl', 'rb'))
 
-#with open('model/IrisClassifier.pkl', 'rb') as handle:
-#    iris_model = pickle.loads(handle.read())
+with open('model/IrisClassifier.pkl', 'rb') as handle:
+    iris_model = pickle.loads(handle.read())
 
 
 layout = 'centered' #wide / centered

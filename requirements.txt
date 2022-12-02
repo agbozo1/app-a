@@ -1,5 +1,4 @@
 opencv-python-headless
 tensorflow==2.10.0
 Pillow
-pickle
 scikit-learn==0.24.2

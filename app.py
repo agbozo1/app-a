@@ -1,9 +1,6 @@
 import streamlit as st
 
 
-from sklearn.model_selection import train_test_split
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.metrics import classification_report, confusion_matrix
 import pickle
 
 iris_model = pickle.load(open('model/IrisClassifier.pkl', 'rb'))

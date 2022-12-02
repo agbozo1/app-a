@@ -6,8 +6,10 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import classification_report, confusion_matrix
 import pickle
 
-iris_model = pickle.load(open('IrisClassifier.pkl', 'rb'))
+#iris_model = pickle.load(open('IrisClassifier.pkl', 'rb'))
 
+with open('IrisClassifier.pkl', 'rb') as f: 
+    iris_model = pickle.loads(f.read())
 
 
 layout = 'centered' #wide / centered

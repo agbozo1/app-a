@@ -1,5 +1,4 @@
 import streamlit as st
-from urllib.request import urlopen
 
 
 import pickle
@@ -44,8 +43,7 @@ with st.container():
     
     if submitted:
         data = [[int(sep_len), int(sep_wid), int(pet_len), int(pet_wid)]]
-        #st.text(sep_len + " " + sep_wid + " " + pet_len + pet_wid)
-        #mydata
+
         st.text(data)
 
         PredictedFlowers = iris_model.predict(data)
